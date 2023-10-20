@@ -9,6 +9,11 @@ function App()
     const [contacts, setContacts] = useState([]);
     const [editMode, setEditMode] = useState({});
     const submit = () => {
+      if(name ==="" || number === "")
+      {
+        alert("Both the fields are required")
+        return
+      }
       if(editMode.id)
       {
         handleEdit()
@@ -112,7 +117,6 @@ function App()
               type="text"
               value={name}
               placeholder='Name'
-              required={true}
               onChange={(e)=>{setName(e.target.value);}}
             />
           </div>
@@ -123,7 +127,6 @@ function App()
               type="text"
               value={number}
               placeholder="Contact Number"
-              required={true}
               onChange={(e) => {setNumber(e.target.value);}}
             />
           </div>

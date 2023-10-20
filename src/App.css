@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+    box-sizing: border-box;
+    font-family: 'Ariel';
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  body {
+    margin-top: 10px;
+    height: 100vh;
+    background-color: silver;
   }
-  to {
-    transform: rotate(360deg);
+  
+  
+  
+  
+  .InputFields {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
   }
-}
+  
+  
+  .separator {
+    border-left: 3px solid black;
+    height: inherit;
+    margin-left: 3px;
+  }
+
+  .output {
+    margin-left: 10px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+  .output h2{
+    text-align: center;
+  }
+  
+  .OutputSection{
+    display: flex;
+    flex-direction: column;
+    border: black;
+  }
+
+  .inputData {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .inputData label {
+    font-weight: lighter;
+    font-size: 1em;
+    margin-bottom: 5px;
+    }
+  
+  
+  .inputData input {
+    background-color: silver;
+    border: 1px solid silver;
+    padding: 0.1em;
+    border-radius: 6px;
+    font-size: 1em;
+  }
+  
+  .InputFields button {
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1em;
+    width: 100%;
+    text-decoration: solid;
+    border: 3px solid black;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .submit-btn {
+    background-color: white;
+  }
+  
+  .submit-btn:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .OutputSection button {
+    float: left;
+    border: 1px solid black;
+    background-color: white;
+    font-size: 0.8em; 
+    margin-right: 10px;
+  }
+  
+  .edit-btn:hover {
+    background-color: blue;
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background-color: red;
+    color:white;
+  }
+
+  .cancel-btn:hover{
+    color: red;
+    background-color: white;
+  }
